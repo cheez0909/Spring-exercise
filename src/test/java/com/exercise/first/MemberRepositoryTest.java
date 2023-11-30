@@ -1,7 +1,7 @@
 package com.exercise.first;
 
-import com.exercise.first.ex01.Member;
-import com.exercise.first.ex01.MemberRepository;
+import ex01.Member;
+import ex01.MemberRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

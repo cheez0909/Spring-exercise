@@ -1,4 +1,4 @@
-package com.exercise.first.ex02;
+package ex02;
 
 public class Address {
     private String city;

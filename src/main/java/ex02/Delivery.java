@@ -1,4 +1,4 @@
-package com.exercise.first.ex02;
+package ex02;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
