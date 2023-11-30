@@ -17,8 +17,8 @@ dependencies {
 }
 ```
 
-✅ `lombok` 라이브러리는 별도로 라이브러리 설치가 필요하다!(Setting)
-✅ `p6spy-spring-boot-starter` 라이브러리는 동적 쿼리문을 자세히 볼 수 있게 해주는 라이브러리
+✅ `lombok` 라이브러리는 별도로 라이브러리 설치가 필요하다!(Setting)<br>
+✅ `p6spy-spring-boot-starter` 라이브러리는 동적 쿼리문을 자세히 볼 수 있게 해주는 라이브러리<br>
 
 <br>
 
@@ -52,7 +52,7 @@ logging.level:
 
 ### 2. 롬복 라이브러리 확인
 ___
-✅ Data 클래스와 Apllication을 통해 롬복 라이브러리가 정상적으로 설치됐음을 확인
+✅ Data 클래스와 Apllication을 통해 롬복 라이브러리가 정상적으로 설치됐음을 확인<br>
 
 <br>
 <br>
