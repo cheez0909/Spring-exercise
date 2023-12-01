@@ -6,11 +6,11 @@ import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter
+@Setter
+@DiscriminatorValue("M")
 @Entity
-@Getter @Setter
-@DiscriminatorValue("A") // 애너테이션 추가
-public class Album extends Item{
-    private String artist;
-    private String etc;
-
+public class Movie extends Item{
+    private String director;
+    private String actor;
 }

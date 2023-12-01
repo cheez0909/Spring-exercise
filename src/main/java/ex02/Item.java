@@ -1,16 +1,16 @@
 package ex02;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jdk.jfr.Category;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE) // 애너테이션 추가
+@DiscriminatorColumn(name = "dtype") // 애너테이션 추가
 @Getter
 @Setter
 public class Item {
@@ -19,7 +19,11 @@ public class Item {
     @Column(name = "item_id")
     private Long id;
 
+    private String name; // 상품명 필드 추가
     private int price;
-    private List<Category> categories;
+    private int stockQuantity; // 재고 필드 추가
+
+    @ManyToMany(mappedBy = "items")
+    private List<Category> categories = new ArrayList<>();
 
 }
