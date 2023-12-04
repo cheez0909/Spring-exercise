@@ -1,4 +1,4 @@
-package ex01;
+package com.exercise.first.ex01;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package ex02;
+package com.exercise.first.ex02;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -7,6 +7,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(name = "order_item")
 public class OrderItem {
 
     @Id

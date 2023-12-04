@@ -1,4 +1,4 @@
-package ex02;
+package com.exercise.first.ex02;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -13,6 +13,7 @@ import java.util.List;
 @Setter
 @Table(name = "orders") // 테이블 애너테이션 추가
 public class Order {
+
     @Id @GeneratedValue
     @Column(name = "order_id")
     private Long id;

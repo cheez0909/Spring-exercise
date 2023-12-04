@@ -1,7 +1,6 @@
-package ex02;
+package com.exercise.first.ex02;
 
 import jakarta.persistence.*;
-import jdk.jfr.Category;
 import lombok.Getter;
 import lombok.Setter;
 

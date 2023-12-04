@@ -1,4 +1,4 @@
-package ex02;
+package com.exercise.first.ex02;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
