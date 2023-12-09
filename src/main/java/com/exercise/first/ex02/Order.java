@@ -27,7 +27,7 @@ public class Order {
 
     // 1대 M 관계 추가
     // 지연로딩 설정
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<OrderItem> orderitemList = new ArrayList<>();
 
     // 1대 1관계추가

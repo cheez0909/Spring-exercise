@@ -20,6 +20,13 @@ public class ItemService {
         itemRepository.save(item);
     }
 
+    // Dirty checking
+    @Transactional
+    public void updateItem(Long id, String name, int price, int stock){
+        Item one = itemRepository.findOne(id);
+        one.update(name, price, stock);
+    }
+
     public Item findOne(Long id){
         return itemRepository.findOne(id);
     }

@@ -21,6 +21,10 @@ public class ItemRepository {
             em.persist(item);
         } else {
             em.merge(item);
+            // 준영속 엔티티
+            // 이후에 사용할 경우
+            // Item merge = em.merge(item);
+            // 위처럼 사용해야함
         }
     }
 

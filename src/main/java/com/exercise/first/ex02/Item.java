@@ -46,4 +46,10 @@ public class Item {
     }
 
 
+     public void update(String name, int price, int stockQuantity){
+        setName(name);
+        setPrice(price);
+        setStockQuantity(stockQuantity);
+    }
+
 }
